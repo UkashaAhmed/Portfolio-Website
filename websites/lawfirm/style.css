@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-top {
+    background: #1a1a1a;
+    color: white;
+    padding: 0.8rem 0;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid white;
+}
+
+.navbar {
+    background: #8b7355;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%238b7355" width="1200" height="600"/></svg>');
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    padding: 15px 40px;
+    background: #8b7355;
+    color: white;
+    border: 2px solid white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-btn:hover {
+    background: white;
+    color: #8b7355;
+}
+
+.practice-areas {
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+
+.practice-areas h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #8b7355;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.practice-card {
+    background: white;
+    padding: 2.5rem;
+    text-align: center;
+    border-top: 4px solid #8b7355;
+    transition: transform 0.3s;
+}
+
+.practice-card:hover {
+    transform: translateY(-10px);
+}
+
+.practice-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.practice-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.practice-card p {
+    color: #666;
+}
+
+.attorneys {
+    padding: 100px 0;
+}
+
+.attorneys h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #8b7355;
+}
+
+.attorney-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.attorney-card {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f8f8;
+}
+
+.attorney-photo {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.attorney-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.attorney-title {
+    color: #8b7355;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.cta-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 18px 50px;
+    background: #8b7355;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background: #6d5a43;
+}
+
+.footer {
+    background: #8b7355;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .practice-grid,
+    .attorney-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
