@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Schedule - FitLife Personal Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">💪 FitLife</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="../../index.html" class="back-btn">← Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Class Schedule</h1>
+            <p>Join our group fitness classes</p>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="container">
+            <div class="schedule-filters">
+                <button class="filter-btn active" onclick="filterDay('all')">All Days</button>
+                <button class="filter-btn" onclick="filterDay('monday')">Monday</button>
+                <button class="filter-btn" onclick="filterDay('wednesday')">Wednesday</button>
+                <button class="filter-btn" onclick="filterDay('friday')">Friday</button>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="class-card" data-day="monday">
+                    <div class="class-time">6:00 AM - 7:00 AM</div>
+                    <h3>Morning HIIT</h3>
+                    <p class="class-trainer">with Sarah Williams</p>
+                    <p class="class-desc">High-intensity interval training to kickstart your day</p>
+                    <div class="class-info">
+                        <span>📅 Monday</span>
+                        <span>👥 12 spots</span>
+                    </div>
+                    <button class="book-class-btn">Book Class</button>
+                </div>
+
+                <div class="class-card" data-day="monday">
+                    <div class="class-time">12:00 PM - 1:00 PM</div>
+                    <h3>Strength & Conditioning</h3>
+                    <p class="class-trainer">with Mike Johnson</p>
+                    <p class="class-desc">Build strength with compound movements</p>
+                    <div class="class-info">
+                        <span>📅 Monday</span>
+                        <span>👥 10 spots</span>
+                    </div>
+                    <button class="book-class-btn">Book Class</button>
+                </div>
+
+                <div class="class-card" data-day="wednesday">
+                    <div class="class-time">6:00 AM - 7:00 AM</div>
+                    <h3>Cardio Blast</h3>
+                    <p class="class-trainer">with David Chen</p>
+                    <p class="class-desc">Burn calories with intense cardio workouts</p>
+                    <div class="class-info">
+                        <span>📅 Wednesday</span>
+                        <span>👥 15 spots</span>
+                    </div>
+                    <button class="book-class-btn">Book Class</button>
+                </div>
+
+                <div class="class-card" data-day="wednesday">
+                    <div class="class-time">6:00 PM - 7:00 PM</div>
+                    <h3>Yoga & Mobility</h3>
+                    <p class="class-trainer">with Sarah Williams</p>
+                    <p class="class-desc">Improve flexibility and reduce stress</p>
+                    <div class="class-info">
+                        <span>📅 Wednesday</span>
+                        <span>👥 20 spots</span>
+                    </div>
+                    <button class="book-class-btn">Book Class</button>
+                </div>
+
+                <div class="class-card" data-day="friday">
+                    <div class="class-time">6:00 AM - 7:00 AM</div>
+                    <h3>Bootcamp</h3>
+                    <p class="class-trainer">with Mike Johnson</p>
+                    <p class="class-desc">Full-body workout to end the week strong</p>
+                    <div class="class-info">
+                        <span>📅 Friday</span>
+                        <span>👥 12 spots</span>
+                    </div>
+                    <button class="book-class-btn">Book Class</button>
+                </div>
+
+                <div class="class-card" data-day="friday">
+                    <div class="class-time">5:00 PM - 6:00 PM</div>
+                    <h3>Boxing Fitness</h3>
+                    <p class="class-trainer">with David Chen</p>
+                    <p class="class-desc">Learn boxing techniques while getting fit</p>
+                    <div class="class-info">
+                        <span>📅 Friday</span>
+                        <span>👥 10 spots</span>
+                    </div>
+                    <button class="book-class-btn">Book Class</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife Personal Training. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterDay(day) {
+            const cards = document.querySelectorAll('.class-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            cards.forEach(card => {
+                if (day === 'all' || card.dataset.day === day) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - Project Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🌤️ Weather Dashboard</h1>
+            <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+        </header>
+        
+        <div class="main-content">
+            <div class="search-section">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button onclick="searchWeather()">Search</button>
+            </div>
+            
+            <div id="weatherDisplay" class="weather-display">
+                <div class="current-weather">
+                    <h2 id="cityName">San Francisco</h2>
+                    <div class="temp-display">
+                        <span class="temperature">72°F</span>
+                        <span class="weather-icon">☀️</span>
+                    </div>
+                    <p class="weather-desc">Sunny</p>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <span>💧 Humidity</span>
+                            <strong>65%</strong>
+                        </div>
+                        <div class="detail-item">
+                            <span>💨 Wind Speed</span>
+                            <strong>12 mph</strong>
+                        </div>
+                        <div class="detail-item">
+                            <span>🌡️ Feels Like</span>
+                            <strong>70°F</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="forecast">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-grid" id="forecastGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

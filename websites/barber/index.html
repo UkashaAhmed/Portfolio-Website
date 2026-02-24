@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Cuts Barbershop - Premium Grooming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">✂️ Elite Cuts</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="../../index.html" class="back-btn">← Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-split">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <span class="subtitle">Since 2005</span>
+                    <h1>Where Style<br>Meets Precision</h1>
+                    <p>Premium barbering for the modern gentleman</p>
+                    <button class="cta-btn" onclick="alert('Booking system demo')">Book Appointment</button>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Walk-ins Welcome</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Expert Barbers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image">✂️</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-list">
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="service-number">01</div>
+                        <div>
+                            <h3>Classic Haircut</h3>
+                            <p>Traditional cut with hot towel and styling</p>
+                        </div>
+                    </div>
+                    <div class="service-price">$35</div>
+                </div>
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="service-number">02</div>
+                        <div>
+                            <h3>Hot Shave</h3>
+                            <p>Straight razor shave with premium products</p>
+                        </div>
+                    </div>
+                    <div class="service-price">$40</div>
+                </div>
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="service-number">03</div>
+                        <div>
+                            <h3>Beard Trim</h3>
+                            <p>Shape and style with beard oil treatment</p>
+                        </div>
+                    </div>
+                    <div class="service-price">$25</div>
+                </div>
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="service-number">04</div>
+                        <div>
+                            <h3>The Works</h3>
+                            <p>Haircut, shave, beard trim, and facial</p>
+                        </div>
+                    </div>
+                    <div class="service-price">$85</div>
+                </div>
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="service-number">05</div>
+                        <div>
+                            <h3>Kids Cut</h3>
+                            <p>Haircut for children under 12</p>
+                        </div>
+                    </div>
+                    <div class="service-price">$25</div>
+                </div>
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="service-number">06</div>
+                        <div>
+                            <h3>Hair Color</h3>
+                            <p>Professional coloring and highlights</p>
+                        </div>
+                    </div>
+                    <div class="service-price">$50+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container-full">
+            <div class="section-header">
+                <span class="section-subtitle">Our Work</span>
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <div class="gallery-image">✂️</div>
+                    <div class="gallery-overlay">
+                        <span>Classic Fade</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <div class="gallery-image">💈</div>
+                    <div class="gallery-overlay">
+                        <span>Beard Sculpting</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <div class="gallery-image">🪒</div>
+                    <div class="gallery-overlay">
+                        <span>Hot Shave</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <div class="gallery-image">✨</div>
+                    <div class="gallery-overlay">
+                        <span>Modern Style</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <div class="gallery-image">🎯</div>
+                    <div class="gallery-overlay">
+                        <span>Line Up</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <div class="gallery-image">👔</div>
+                    <div class="gallery-overlay">
+                        <span>Business Cut</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Meet The Team</span>
+                <h2>Master Barbers</h2>
+            </div>
+            <div class="team-grid">
+                <div class="barber-card">
+                    <div class="barber-image">👨‍🦰</div>
+                    <div class="barber-details">
+                        <h3>Marcus Stone</h3>
+                        <p class="barber-title">Master Barber</p>
+                        <p class="barber-exp">20+ years experience</p>
+                        <button class="book-btn">Book with Marcus</button>
+                    </div>
+                </div>
+                <div class="barber-card">
+                    <div class="barber-image">👨‍🦱</div>
+                    <div class="barber-details">
+                        <h3>James Rivera</h3>
+                        <p class="barber-title">Senior Barber</p>
+                        <p class="barber-exp">Fade specialist</p>
+                        <button class="book-btn">Book with James</button>
+                    </div>
+                </div>
+                <div class="barber-card">
+                    <div class="barber-image">👨‍🦲</div>
+                    <div class="barber-details">
+                        <h3>Tony Martinez</h3>
+                        <p class="barber-title">Barber & Stylist</p>
+                        <p class="barber-exp">Modern cuts expert</p>
+                        <button class="book-btn">Book with Tony</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-left">
+                    <h2>Visit Us</h2>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>456 Main Street<br>Downtown District<br>Your City, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>Phone: (555) 234-5678<br>Email: info@elitecuts.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hours-right">
+                    <h3>Opening Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-row">
+                            <span>Monday - Friday</span>
+                            <span>9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Saturday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Sunday</span>
+                            <span>10:00 AM - 4:00 PM</span>
+                        </div>
+                    </div>
+                    <p class="walk-in-note">Walk-ins welcome!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Elite Cuts Barbershop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard - Project Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📊 Analytics Dashboard</h1>
+            <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+        </header>
+        
+        <div class="main-content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-value" id="users">12,543</div>
+                    <div class="stat-label">Total Users</div>
+                    <div class="stat-change positive">+12.5%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-value" id="revenue">$45,231</div>
+                    <div class="stat-label">Revenue</div>
+                    <div class="stat-change positive">+8.2%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-value" id="conversions">3,241</div>
+                    <div class="stat-label">Conversions</div>
+                    <div class="stat-change positive">+15.3%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-value" id="avgTime">4m 32s</div>
+                    <div class="stat-label">Avg. Session</div>
+                    <div class="stat-change negative">-2.1%</div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3>Weekly Performance</h3>
+                <div class="chart" id="chart"></div>
+            </div>
+            
+            <div class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div id="activityList"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
